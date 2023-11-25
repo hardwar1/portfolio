@@ -1,0 +1,31 @@
+.address {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  &__link {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: #028dd8;
+      }
+    }
+
+    &--tel {
+      svg {
+        stroke: currentColor;
+      }
+    }
+
+    &--email {
+      svg {
+        fill: currentColor;
+      }
+    }
+  }
+}

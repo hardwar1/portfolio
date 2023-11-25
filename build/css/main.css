@@ -16,6 +16,11 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px solid #028dd8;
+  outline-offset: 2px;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -44,6 +49,7 @@ a {
   transition-property: color;
   transition-duration: 0.3s;
   color: inherit;
+  border-radius: 4px;
 }
 
 b {
@@ -453,6 +459,30 @@ cite {
 }
 .social__link svg {
   display: block;
+}
+
+.address {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.address__link {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s;
+}
+@media (hover: hover) and (pointer: fine) {
+  .address__link:hover {
+    color: #028dd8;
+  }
+}
+.address__link--tel svg {
+  stroke: currentColor;
+}
+.address__link--email svg {
+  fill: currentColor;
 }
 
 .header {

@@ -8,6 +8,11 @@ html {
   box-sizing: inherit;
 }
 
+*:focus {
+  outline: 2px solid #028dd8;
+  outline-offset: 2px;
+}
+
 body {
   position: relative;
   margin: 0;
@@ -36,6 +41,7 @@ a {
   transition-property: color;
   transition-duration: 0.3s;
   color: inherit;
+  border-radius: 4px;
 }
 
 b {
@@ -74,6 +80,8 @@ select {
   font: inherit;
   letter-spacing: inherit;
 }
+
+
 
 address {
   font-style: normal;
