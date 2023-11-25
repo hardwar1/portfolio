@@ -1,0 +1,56 @@
+<div class="projects {{projects-parent-mod}} {{projects-mod}}">
+  <div class="container">
+    <h2 class="projects__h2 h2">
+      Проекты
+    </h2>
+
+    <ul class="projects__list">
+      {{#each project}}
+      <li class="projects__item">
+        <article class="project">
+          <a class="project__img-wrapper" href="{{watchLink}}" target="_blank">
+            <img class="project__img" src="img/projects/{{img}}.png" width="200" alt="посмотреть этот проект">
+          </a>
+
+          <div class="project__info">
+            <h3 class="project__title">
+              {{title}}
+            </h3>
+
+            <p class="project__text">
+              {{text}}
+            </p>
+
+            <div class="project__tech">
+              {{tech}}
+            </div>
+
+            <span class="project__year">
+              год: {{year}} страниц: {{pages}}
+            </span>
+
+            <div class="project__links">
+              <a class="project__link project__link--main" href="{{watchLink}}" target="_blank">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite.svg#link"></use>
+                </svg>
+
+                Посмотреть вживую
+              </a>
+
+              <a class="project__link project__link--git" href="{{codeLink}}" target="_blank">
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite.svg#tech7"></use>
+                </svg>
+
+                Посмотреть код
+              </a>
+            </div>
+          </div>
+        </article>
+      </li>
+      {{/each}}
+    </ul>
+
+  </div>
+</div>

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG stack preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as stack SVGs, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-link-dims { width: 20px; height: 20px; }
+ .svg-soc-tg-dims { width: 512px; height: 512px; }
+ .svg-soc-wa-dims { width: 512px; height: 512px; }
+ .svg-tech1-dims { width: 120px; height: 120px; }
+ .svg-tech10-dims { width: 800px; height: 800px; }
+ .svg-tech11-dims { width: 800px; height: 800px; }
+ .svg-tech12-dims { width: 800px; height: 800px; }
+ .svg-tech13-dims { width: 100px; height: 100px; }
+ .svg-tech14-dims { width: 800px; height: 800px; }
+ .svg-tech15-dims { width: 128px; height: 128px; }
+ .svg-tech16-dims { width: 2000px; height: 292.97px; }
+ .svg-tech17-dims { width: 800px; height: 800px; }
+ .svg-tech18-dims { width: 800px; height: 800px; }
+ .svg-tech2-dims { width: 120px; height: 119px; }
+ .svg-tech3-dims { width: 120px; height: 120px; }
+ .svg-tech4-dims { width: 113px; height: 101px; }
+ .svg-tech5-dims { width: 117px; height: 87px; }
+ .svg-tech6-dims { width: 105px; height: 105px; }
+ .svg-tech7-dims { width: 88px; height: 88px; }
+ .svg-tech8-dims { width: 800px; height: 800px; }
+ .svg-tech9-dims { width: 800px; height: 800px; }
+ .svg-tel-dims { width: 19px; height: 19px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+        <header>
+            <h1>SVG stack preview</h1>
+            <p>This preview features an SVG stack. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-fragment" target="_blank" rel="noopener noreferrer">support SVG fragment identifiers</a> for SVG stacks to work.</li>
+                <li>Support for SVG fragment identifiers hasn't always been that decent. For older browsers you will have to use some prolyfill like <a href="https://github.com/preciousforever/SVG-Stacker/blob/master/fixsvgstack.jquery.js" target="_blank" rel="noopener noreferrer">fixsvgstack.jquery.js</a>.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+SVG stack
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) to reference certain portions of the
+external sprite. By default, all shapes inside the sprite are hidden by CSS. The `:target` pseudo
+selector is used to show the very shape that is referenced by the fragment identifier.
+-->
+
+            <ul>
+
+             <li title="link">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#link" class="svg-link-dims" alt="link">
+                    </div>
+                    <h2>link, </h2>
+                </li>
+             <li title="soc-tg">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#soc-tg" class="svg-soc-tg-dims" alt="soc-tg">
+                    </div>
+                    <h2>soc-tg, </h2>
+                </li>
+             <li title="soc-wa">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#soc-wa" class="svg-soc-wa-dims" alt="soc-wa">
+                    </div>
+                    <h2>soc-wa, </h2>
+                </li>
+             <li title="tech1">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech1" class="svg-tech1-dims" alt="tech1">
+                    </div>
+                    <h2>tech1, </h2>
+                </li>
+             <li title="tech10">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech10" class="svg-tech10-dims" alt="tech10">
+                    </div>
+                    <h2>tech10, </h2>
+                </li>
+             <li title="tech11">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech11" class="svg-tech11-dims" alt="tech11">
+                    </div>
+                    <h2>tech11, </h2>
+                </li>
+             <li title="tech12">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech12" class="svg-tech12-dims" alt="tech12">
+                    </div>
+                    <h2>tech12, </h2>
+                </li>
+             <li title="tech13">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech13" class="svg-tech13-dims" alt="tech13">
+                    </div>
+                    <h2>tech13, </h2>
+                </li>
+             <li title="tech14">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech14" class="svg-tech14-dims" alt="tech14">
+                    </div>
+                    <h2>tech14, </h2>
+                </li>
+             <li title="tech15">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech15" class="svg-tech15-dims" alt="tech15">
+                    </div>
+                    <h2>tech15, </h2>
+                </li>
+             <li title="tech16">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech16" class="svg-tech16-dims" alt="tech16">
+                    </div>
+                    <h2>tech16, </h2>
+                </li>
+             <li title="tech17">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech17" class="svg-tech17-dims" alt="tech17">
+                    </div>
+                    <h2>tech17, </h2>
+                </li>
+             <li title="tech18">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech18" class="svg-tech18-dims" alt="tech18">
+                    </div>
+                    <h2>tech18, </h2>
+                </li>
+             <li title="tech2">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech2" class="svg-tech2-dims" alt="tech2">
+                    </div>
+                    <h2>tech2, </h2>
+                </li>
+             <li title="tech3">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech3" class="svg-tech3-dims" alt="tech3">
+                    </div>
+                    <h2>tech3, </h2>
+                </li>
+             <li title="tech4">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech4" class="svg-tech4-dims" alt="tech4">
+                    </div>
+                    <h2>tech4, </h2>
+                </li>
+             <li title="tech5">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech5" class="svg-tech5-dims" alt="tech5">
+                    </div>
+                    <h2>tech5, </h2>
+                </li>
+             <li title="tech6">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech6" class="svg-tech6-dims" alt="tech6">
+                    </div>
+                    <h2>tech6, </h2>
+                </li>
+             <li title="tech7">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech7" class="svg-tech7-dims" alt="tech7">
+                    </div>
+                    <h2>tech7, </h2>
+                </li>
+             <li title="tech8">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech8" class="svg-tech8-dims" alt="tech8">
+                    </div>
+                    <h2>tech8, </h2>
+                </li>
+             <li title="tech9">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tech9" class="svg-tech9-dims" alt="tech9">
+                    </div>
+                    <h2>tech9, </h2>
+                </li>
+             <li title="tel">
+                    <div class="icon-box">
+                        <img src="../../../img/sprite.svg#tel" class="svg-tel-dims" alt="tel">
+                    </div>
+                    <h2>tel, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Sat, 25 Nov 2023 18:28:59 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

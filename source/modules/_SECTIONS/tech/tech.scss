@@ -1,0 +1,117 @@
+.tech {
+  &__inner {
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    gap: 60px 80px;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 120px;
+    height: 120px;
+    position: relative;
+
+    &:hover span {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    span {
+      position: absolute;
+      inset: 0;
+      top: calc(100% + 23px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(-35px);
+      transition: opacity 0.4s, transform 0.4s;
+    }
+
+    &--tech1 {
+      background-image: url(../img/icons/tech1.svg);
+    }
+
+    &--tech2 {
+      background-image: url(../img/icons/tech2.svg);
+    }
+
+    &--tech3 {
+      background-image: url(../img/icons/tech3.svg);
+    }
+
+    &--tech4 {
+      background-image: url(../img/icons/tech4.svg);
+    }
+
+    &--tech5 {
+      background-image: url(../img/icons/tech5.svg);
+    }
+
+    &--tech6 {
+      background-image: url(../img/icons/tech6.svg);
+    }
+
+    &--tech7 {
+      background-image: url(../img/tech7.svg);
+    }
+
+    &--tech8 {
+      background-image: url(../img/icons/tech8.svg);
+    }
+
+    &--tech9 {
+      background-color: #fff;
+      border-radius: 8px;
+      background-image: url(../img/icons/tech9.svg);
+    }
+
+    &--tech10 {
+      background-image: url(../img/icons/tech10.svg);
+    }
+    &--tech11 {
+      background-image: url(../img/icons/tech11.svg);
+    }
+
+    &--tech12 {
+      background-image: url(../img/icons/tech12.svg);
+    }
+
+    &--tech13 {
+      background-image: url(../img/tech13.png);
+      border-radius: 15px;
+    }
+
+    &--tech14 {
+      background-image: url(../img/icons/tech14.svg);
+    }
+
+    &--tech15 {
+      background-image: url(../img/icons/tech15.svg);
+    }
+
+    &--tech16 {
+      background-image: url(../img/icons/tech16.svg);
+    }
+
+    &--tech17 {
+      background-image: url(../img/icons/tech17.svg);
+    }
+
+    &--tech18 {
+      background-image: url(../img/icons/tech18.svg);
+    }
+  }
+}
+
+.h2 {
+}
+.subtext {
+}

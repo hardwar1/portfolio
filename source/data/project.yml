@@ -1,0 +1,84 @@
+-
+  title: 'Русский экспресс'
+  text: 'Коммерческий проект сделан для telemark-it.ru'
+  tech: 'HTML SCSS JS Gulp Swiper Daterangepicker'
+  img: 1
+  year: '2023'
+  pages: 23
+  watchLink: 'https://hardwar1.github.io/express/build/1.html'
+  codeLink: 'https://github.com/hardwar1/express'
+-
+  title: 'Диал-тур'
+  text: 'Коммерческий проект сделан для telemark-it.ru'
+  tech: 'HTML SCSS JS Gulp Swiper Fancybox'
+  img: 2
+  year: '2023'
+  pages: 3
+  watchLink: 'https://hardwar1.github.io/dial-tour/build/1.html'
+  codeLink: 'https://github.com/hardwar1/dial-tour'
+-
+  title: 'Форма расписания'
+  text: 'Тестовое на позицию Frontend'
+  tech: 'React TS SCSS Vite React-route'
+  img: 8
+  year: '2023'
+  pages: 'SPA'
+  watchLink: 'https://hardwar1.github.io/testForWorkForm/'
+  codeLink: 'https://github.com/hardwar1/testForWorkForm'
+-
+  title: 'Таймер "Метод помидора"'
+  text: 'Пет проект'
+  tech: 'React TS SCSS Vite React-route Redux Rtk'
+  img: 9
+  year: '2023'
+  pages: 'SPA'
+  watchLink: 'https://hardwar1.github.io/Tomato-timer/'
+  codeLink: 'https://github.com/hardwar1/Tomato-timer'
+-
+  title: 'ТулМашсервис'
+  text: 'Коммерческий проект сделан для интернет-агентства brevis-site.ru'
+  tech: 'HTML SCSS JS Gulp Swiper Fancybox Jquery'
+  img: 3
+  year: '2023'
+  pages: 5
+  watchLink: 'https://hardwar1.github.io/tulmash/build/1.html'
+  codeLink: 'https://github.com/hardwar1/tulmash'
+-
+  title: 'Angartent'
+  text: 'Коммерческий проект сделан для интернет-агентства brevis-site.ru'
+  tech: 'HTML SCSS JS Gulp Swiper Fancybox Jquery'
+  img: 4
+  year: '2023'
+  pages: 3
+  watchLink: 'https://hardwar1.github.io/angar/build/1.html'
+  codeLink: 'https://github.com/hardwar1/angar'
+-
+  title: 'Аренда квартир'
+  text: 'Пет проект'
+  tech: 'HTML SCSS JS Gulp Swiper'
+  img: 5
+  year: '2021'
+  pages: 2
+  watchLink: 'https://hardwar1.github.io/arenda/build/'
+  codeLink: 'https://github.com/hardwar1/arenda'
+-
+  title: 'WЕTrade'
+  text: 'Пет проект'
+  tech: 'HTML SCSS JS Gulp'
+  img: 7
+  year: '2021'
+  pages: 3
+  watchLink: 'https://hardwar1.github.io/7WEtrade/build/'
+  codeLink: 'https://github.com/hardwar1/7WEtrade'
+-
+  title: 'Hermetia illucens'
+  text: 'Пет проект'
+  tech: 'HTML SCSS JS Gulp Swiper'
+  img: 6
+  year: '2021'
+  pages: 1
+  watchLink: 'https://hardwar1.github.io/hermetia/build/'
+  codeLink: 'https://github.com/hardwar1/hermetia'
+
+
+

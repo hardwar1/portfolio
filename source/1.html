@@ -1,0 +1,14 @@
+---
+layout: 1
+title: Список страниц
+list-1:
+    -   href: index
+        text: Главная
+---
+<ol>
+    {{#each list-1}}
+    <li>
+        <a href="{{href}}.html">{{text}}</a>
+    </li>
+    {{/each}}
+</ol>

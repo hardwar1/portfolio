@@ -1,0 +1,64 @@
+.hero {
+  &__inner {
+    display: flex;
+
+    gap: 60px;
+  }
+
+  &__info {
+    max-width: 730px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__hand {
+    position: relative;
+    display: inline-block;
+    animation: shakeHand 1.2s ease-in-out 0s infinite;
+  }
+
+  &__img-box {
+    position: relative;
+    max-width: 300px;
+    overflow: hidden;
+
+    &::after {
+      content: "Фото какого то мужика";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      color: #fff;
+      font-style: italic;
+      background-color: rgba(0, 0, 0, 0.5);
+      transform: translateY(-150%);
+      transition: transform 0.3s;
+      padding: 10px;
+      z-index: 2;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover::after {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__img {
+    filter: grayscale(100%);
+
+    opacity: 0.2;
+  }
+}
+
+@keyframes shakeHand {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

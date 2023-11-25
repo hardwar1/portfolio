@@ -1,0 +1,161 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 15px;
+  max-width: 1230px;
+}
+
+.container .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.swiper-slide,
+.swiper-slide > * {
+  box-sizing: border-box;
+}
+
+.h1 {
+  font-weight: 700;
+  font-size: 58px;
+
+  @include max-w($desktops-md) {
+    font-size: 59px;
+    line-height: 84px;
+  }
+
+  @include max-w($tablets) {
+    font-size: 33px;
+    line-height: normal;
+  }
+}
+
+.h2 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
+  margin-bottom: 15px;
+
+  @include max-w($desktops-sm) {
+    font-size: 30px;
+  }
+
+  @include max-w($phones-lg) {
+    font-size: 25px;
+  }
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.subtext {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.burger-btn {
+  @include no-btn;
+  position: relative;
+  z-index: 35;
+  display: none;
+  border-width: 0;
+  width: 47px;
+  height: 50px;
+
+  @include max-w($desktops-sm) {
+    display: block;
+  }
+
+  &__line {
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 3px;
+    background-color: #d9d9d9;
+    transition:
+      top 0.6s,
+      left 0.6s,
+      width 0.6s,
+      opacity 0.6s,
+      transform 0.6s;
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  &__line:nth-child(even) {
+    left: 25px;
+    border-radius: 0 9px 9px 0;
+  }
+
+  &__line:nth-child(odd) {
+    left: 13px;
+    border-radius: 9px 0 0 9px;
+  }
+
+  &__line:nth-child(1),
+  &__line:nth-child(2) {
+    top: 13px;
+  }
+
+  &__line:nth-child(4),
+  &__line:nth-child(3) {
+    top: 24px;
+  }
+
+  &__line:nth-child(5),
+  &__line:nth-child(6) {
+    top: 35px;
+  }
+
+  &.active &__line:nth-child(1),
+  &.active &__line:nth-child(6) {
+    transform: rotate(45deg);
+  }
+
+  &.active &__line:nth-child(2),
+  &.active &__line:nth-child(5) {
+    transform: rotate(-45deg);
+  }
+
+  &.active &__line:nth-child(1) {
+    top: 19px;
+    left: 13px;
+  }
+
+  &.active &__line:nth-child(2) {
+    top: 19px;
+    left: 22px;
+  }
+
+  &.active &__line:nth-child(3) {
+    left: -50%;
+    opacity: 0;
+  }
+
+  &.active &__line:nth-child(4) {
+    left: 100%;
+    opacity: 0;
+  }
+
+  &.active &__line:nth-child(5) {
+    top: 28px;
+    left: 13px;
+  }
+
+  &.active &__line:nth-child(6) {
+    top: 28px;
+    left: 22px;
+  }
+
+  &--grey &__line {
+    background-color: #ccc;
+  }
+}
+
+

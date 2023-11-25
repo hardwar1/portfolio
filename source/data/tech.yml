@@ -1,0 +1,54 @@
+-
+  text: 'HTML'
+  svg: 1
+-
+  text: 'CSS'
+  svg: 2
+-
+  text: 'JS'
+  svg: 3
+-
+  text: 'React'
+  svg: 4
+-
+  text: 'SASS'
+  svg: 5
+-
+  text: 'GIT'
+  svg: 6
+-
+  text: 'GIThub'
+  svg: 7
+-
+  text: 'GITlab'
+  svg: 8
+-
+  text: 'React-Route'
+  svg: 9
+-
+  text: 'TypeScript'
+  svg: 10
+-
+  text: 'Redux'
+  svg: 11
+-
+  text: 'JQuery'
+  svg: 12
+-
+  text: 'React-hook-form'
+  svg: 13
+-
+  text: 'Vite'
+  svg: 14
+-
+  text: 'Webpack'
+  svg: 15
+-
+  text: 'Axios'
+  svg: 16
+-
+  text: 'Figma'
+  svg: 17
+-
+  text: 'Gulp'
+  svg: 18

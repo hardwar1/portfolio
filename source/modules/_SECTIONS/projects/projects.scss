@@ -1,0 +1,155 @@
+.projects {
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 20px;
+  }
+
+  &__h2 {
+    margin-bottom: 50px;
+  }
+
+  &__item {
+    width: max(290px, calc(100% / 3 - 40px));
+  }
+}
+
+.project {
+  padding: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 50px 0;
+    background-color: #191919;
+    box-shadow: 0 0 12px 0 #fff;
+    z-index: -1;
+    opacity: 0.2;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::after {
+    opacity: 1;
+  }
+
+  &__img-wrapper {
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  &__img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: left top;
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        transform: translate(-50%, -50%) scale(1.1);
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 225px);
+  }
+
+  &__title {
+    position: relative;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 35px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: calc(100% + 10px);
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 65px);
+      height: 4px;
+      background-image: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+    }
+  }
+
+  &__text {
+    margin-bottom: 15px;
+  }
+
+  &__tech {
+    margin-bottom: 15px;
+  }
+
+  &__year {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 15px;
+    margin-top: auto;
+  }
+
+  &__links {
+    padding-top: 15px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: calc(100% - 65px);
+      height: 2px;
+      background-image: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: #fff;
+    transition: color 0.3s;
+
+    &--main svg {
+      stroke: currentColor;
+    }
+
+    &--git svg {
+        fill: currentColor;
+    }
+
+    @media (hover: hover) and (pointer: fine) {
+      &:hover {
+        color: #028dd8;
+      }
+    }
+
+    svg {
+
+    }
+  }
+}

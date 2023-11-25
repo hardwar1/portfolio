@@ -1,0 +1,22 @@
+<div class="tech {{tech-parent-mod}} {{tech-mod}}">
+  <div class="container">
+    <div class="tech__inner">
+      <h2 class="h2">
+        Мой стек технологий
+      </h2>
+      <p class="subtext">
+        Технологии, с которыми я недавно работал
+      </p>
+
+      <ul class="tech__list">
+        {{#each tech}}
+        <li class="tech__item tech__item--tech{{svg}}">
+          <span>
+            {{text}}
+          </span>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</div>
