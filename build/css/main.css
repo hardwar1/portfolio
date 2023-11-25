@@ -160,13 +160,12 @@ cite {
 @media (max-width: 1199px) {
   .h1 {
     font-size: 59px;
-    line-height: 84px;
   }
 }
 @media (max-width: 767px) {
   .h1 {
-    font-size: 33px;
-    line-height: normal;
+    font-size: 30px;
+    margin: 0 auto;
   }
 }
 
@@ -473,6 +472,16 @@ cite {
   gap: 8px;
   transition: color 0.3s;
 }
+@media (max-width: 768px) {
+  .address__link {
+    font-size: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .address__link {
+    font-size: 0;
+  }
+}
 @media (hover: hover) and (pointer: fine) {
   .address__link:hover {
     color: #028dd8;
@@ -502,6 +511,11 @@ cite {
   display: flex;
   align-items: center;
 }
+@media (max-width: 768px) {
+  .hero__info {
+    width: 100%;
+  }
+}
 .hero__hand {
   position: relative;
   display: inline-block;
@@ -511,6 +525,11 @@ cite {
   position: relative;
   max-width: 300px;
   overflow: hidden;
+}
+@media (max-width: 768px) {
+  .hero__img-box {
+    display: none;
+  }
 }
 .hero__img-box::after {
   content: "Фото какого то мужика";
@@ -553,6 +572,11 @@ cite {
   gap: 60px 80px;
   flex-wrap: wrap;
 }
+@media (max-width: 992px) {
+  .tech__list {
+    gap: 50px 25px;
+  }
+}
 .tech__item {
   background-repeat: no-repeat;
   background-size: contain;
@@ -560,6 +584,12 @@ cite {
   width: 120px;
   height: 120px;
   position: relative;
+}
+@media (max-width: 992px) {
+  .tech__item {
+    width: 60px;
+    height: 60px;
+  }
 }
 .tech__item:hover span {
   opacity: 1;
@@ -645,7 +675,18 @@ cite {
   margin-bottom: 50px;
 }
 .projects__item {
-  width: max(290px, 33.3333333333% - 40px);
+  width: calc(33.3333333333% - 40px);
+}
+@media (max-width: 1200px) {
+  .projects__item {
+    width: calc(50% - 10px);
+    max-width: 490px;
+  }
+}
+@media (max-width: 768px) {
+  .projects__item {
+    width: 100%;
+  }
 }
 
 .project {

@@ -11,7 +11,16 @@
   }
 
   &__item {
-    width: max(290px, calc(100% / 3 - 40px));
+    width: calc(100% / 3 - 40px);
+
+    @media (max-width: $desktops-md) {
+      width: calc(50% - 10px);
+      max-width: 490px;
+    }
+
+    @media (max-width: $tablets ) {
+      width: 100%;
+    }
   }
 }
 

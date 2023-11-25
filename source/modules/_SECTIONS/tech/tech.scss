@@ -7,6 +7,10 @@
     justify-content: center;
     gap: 60px 80px;
     flex-wrap: wrap;
+
+    @media (max-width: $desktops-sm) {
+      gap: 50px 25px;
+    }
   }
 
   &__item {
@@ -16,6 +20,11 @@
     width: 120px;
     height: 120px;
     position: relative;
+
+    @media (max-width: $desktops-sm) {
+      width: 60px;
+      height: 60px;
+    }
 
     &:hover span {
       opacity: 1;

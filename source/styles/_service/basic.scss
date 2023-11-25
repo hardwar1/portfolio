@@ -25,12 +25,11 @@
 
   @include max-w($desktops-md) {
     font-size: 59px;
-    line-height: 84px;
   }
 
   @include max-w($tablets) {
-    font-size: 33px;
-    line-height: normal;
+    font-size: 30px;
+    margin: 0 auto;
   }
 }
 
