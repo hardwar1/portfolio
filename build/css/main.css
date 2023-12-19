@@ -523,6 +523,7 @@ cite {
 }
 .hero__img-box {
   position: relative;
+  width: 100%;
   max-width: 300px;
   overflow: hidden;
 }
@@ -532,7 +533,7 @@ cite {
   }
 }
 .hero__img-box::after {
-  content: "Фото какого то мужика";
+  content: "это не я 😊";
   position: absolute;
   top: 0;
   left: 0;
@@ -552,6 +553,7 @@ cite {
 }
 .hero__img {
   filter: grayscale(100%);
+  width: 100%;
   opacity: 0.2;
 }
 
