@@ -19,7 +19,7 @@
 -
   title: 'Форма расписания'
   text: 'Тестовое на позицию Frontend'
-  tech: 'React TS SCSS Vite React-route'
+  tech: 'React TS SCSS Vite React-router'
   img: 8
   year: '2023'
   pages: 'SPA'
@@ -28,7 +28,7 @@
 -
   title: 'Таймер "Метод помидора"'
   text: 'Пет проект'
-  tech: 'React TS SCSS Vite React-route Redux Rtk'
+  tech: 'React TS SCSS Vite React-router Redux Rtk'
   img: 9
   year: '2023'
   pages: 'SPA'
